@@ -133,7 +133,7 @@ class ShopManager {
         return basket;
     }
 
-    // a. Файлтай ажиллах (I/O) - Барааг файл руу хадгалах
+
     public void saveToFile(String fileName) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             for (Product p : products) {
@@ -146,7 +146,7 @@ class ShopManager {
         }
     }
 
-    // Файлаас уншина
+    
     public void loadFromFile() {
         File file = new File(FILE_NAME);
         if (!file.exists()) return;

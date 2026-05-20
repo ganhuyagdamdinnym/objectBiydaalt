@@ -12124,3 +12124,1003 @@ java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
 2026.05.20 20:58:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
 2026.05.20 20:58:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
 2026.05.20 20:58:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 20:59:58 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:03:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:03:05 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:03:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:03:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:03:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+May 20, 2026 9:03:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "class:/c%3A/Users/user/OneDrive/Desktop/objectBiydaalt/ProductCard%241.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "class" not installed
+	at java.base/java.nio.file.Path.of(Path.java:210)
+	at java.base/java.nio.file.Paths.get(Paths.java:95)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+2026.05.20 21:03:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:08 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java
+2026.05.20 21:03:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+May 20, 2026 9:03:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3079
+2026.05.20 21:03:09 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:09 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ProductCard.java. Using fallback presentation compiler.
+2026.05.20 21:03:32 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:03:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:03:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:03:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:03:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:03:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:03:33 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:03:33 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:09 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:16 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:04:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:18 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:04:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:24 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:04:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:04:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:04:28 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:04:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:04:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:04:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:04:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:06 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:05:06 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:09 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:16 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:05:16 INFO  QDox parse error in file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java (full report at: "C:\Users\user\OneDrive\Desktop\objectBiydaalt\.metals\.reports\metals-full\2026-05-20\r_qdox-error_17-19-50-740.md")
+2026.05.20 21:05:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:20 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:05:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:21 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:05:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:21 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:05:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+May 20, 2026 9:05:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3681
+2026.05.20 21:05:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:22 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:05:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:23 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:05:22 INFO  QDox parse error in file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java (full report at: "C:\Users\user\OneDrive\Desktop\objectBiydaalt\.metals\.reports\metals-full\2026-05-20\r_qdox-error_17-19-50-740.md")
+2026.05.20 21:05:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:23 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:05:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:24 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:05:23 INFO  QDox parse error in file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java (full report at: "C:\Users\user\OneDrive\Desktop\objectBiydaalt\.metals\.reports\metals-full\2026-05-20\r_qdox-error_17-19-50-740.md")
+2026.05.20 21:05:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:31 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:05:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:32 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:05:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:33 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:05:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+May 20, 2026 9:05:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3740
+2026.05.20 21:05:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:36 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:05:36 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:36 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:38 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:05:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:38 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:05:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:39 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:05:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:58 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:58 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:58 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:05:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:00 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:06:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:10 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:11 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:06:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:20 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:06:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:21 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:06:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:06:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:23 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:06:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:29 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:06:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:06:29 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:06:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:07:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:07 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:07:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:11 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+May 20, 2026 9:07:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3926
+2026.05.20 21:07:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:19 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:07:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:22 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:07:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+May 20, 2026 9:07:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4039
+2026.05.20 21:07:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:27 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:07:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:33 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:07:33 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:36 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:36 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:07:36 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:36 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:40 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:07:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:43 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:07:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:07:45 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:07:45 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:46 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:46 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:46 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:08:47 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:48 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:08:49 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:49 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:49 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:51 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:51 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:51 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:53 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:53 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:53 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:53 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:53 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:53 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+May 20, 2026 9:08:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4200
+2026.05.20 21:08:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:55 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:55 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:55 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:55 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:55 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:55 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:55 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:56 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:08:56 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:56 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:56 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:56 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:56 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:57 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:58 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:58 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:08:58 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:08:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:01 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:03 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:04 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:05 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:05 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:06 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:06 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:09 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:09 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:09 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:09 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:13 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:14 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:19 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:20 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:20 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:22 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:23 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:26 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:25 INFO  QDox parse error in file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java (full report at: "C:\Users\user\OneDrive\Desktop\objectBiydaalt\.metals\.reports\metals-full\2026-05-20\r_qdox-error_17-19-50-740.md")
+2026.05.20 21:09:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:27 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:09:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:28 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:28 INFO  QDox parse error in file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java (full report at: "C:\Users\user\OneDrive\Desktop\objectBiydaalt\.metals\.reports\metals-full\2026-05-20\r_qdox-error_17-19-50-740.md")
+2026.05.20 21:09:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:28 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:09:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:29 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:29 INFO  QDox parse error in file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java (full report at: "C:\Users\user\OneDrive\Desktop\objectBiydaalt\.metals\.reports\metals-full\2026-05-20\r_qdox-error_17-19-50-740.md")
+2026.05.20 21:09:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:33 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:33 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:33 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:34 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:09:34 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:36 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:35 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:37 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:37 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:38 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:09:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:09:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:09:43 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:09:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:09:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:09:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:09:46 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:10:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:11:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:11:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:12:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:12:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:12:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:12:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:12:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:34 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:12:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:34 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:38 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:41 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:42 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:12:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:50 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:12:50 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:13:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:13:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:14:04 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:14:04 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:14:06 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:14:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:16:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:16:02 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:16:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:16:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:16:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:16:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:16:04 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:16:04 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:17:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:17:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:17:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:17:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:17:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:03 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:18:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:18:14 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java
+2026.05.20 21:18:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:18:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:18:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:18:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:18:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:18:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:18:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:18:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:18:27 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java
+2026.05.20 21:18:27 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:18:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:30 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java
+2026.05.20 21:18:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:47 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:47 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:49 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:49 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:50 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:49 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:50 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:50 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:50 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:50 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java
+2026.05.20 21:18:50 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:18:51 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\LoginGUI.java. Using fallback presentation compiler.
+2026.05.20 21:19:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:19:03 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:19:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:19:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:19:03 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:19:04 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:19:04 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:19:04 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:19:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:19:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:19:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\BasketGUI.java. Using fallback presentation compiler.
+2026.05.20 21:19:32 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\BasketGUI.java
+2026.05.20 21:19:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\BasketGUI.java. Using fallback presentation compiler.
+2026.05.20 21:19:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:19:39 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:19:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:19:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:19:39 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:19:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:19:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:19:40 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:44 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:44 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:45 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:45 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:45 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:46 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:46 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:46 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:46 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:47 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:24:47 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:47 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java
+2026.05.20 21:24:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+2026.05.20 21:24:57 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\OrderCardGUI.java. Using fallback presentation compiler.
+May 20, 2026 9:24:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4970
+2026.05.20 21:24:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:24:59 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:24:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:24:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:24:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:00 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:02 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:25:02 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:12 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:14 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:15 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:25:15 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:16 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:17 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:19 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:25:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:19 WARN  Running javac-semanticdb failed for file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/ShopManager.java. Output:
+
+2026.05.20 21:25:21 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:23 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:24 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:25:24 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:25 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:31 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:25:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:25:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:01 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:26 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:28 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:29 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:29 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:27:30 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:31 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:32 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:27:43 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:27:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:39:18 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:39:18 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:39:19 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:39:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:39:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:39:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:40:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:40:42 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java
+2026.05.20 21:40:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:40:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:40:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:40:44 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:40:47 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:40:48 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\Main.java. Using fallback presentation compiler.
+2026.05.20 21:40:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:40:52 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:40:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:40:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:40:52 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:41:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:41:42 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:41:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:41:43 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:41:49 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:41:49 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:41:50 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:41:50 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:41:50 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:41:59 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:41:59 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:42:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:42:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:42:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:42:07 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:42:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:42:08 WARN  no build target for: C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java
+2026.05.20 21:42:08 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.
+2026.05.20 21:47:54 INFO  no build target found for C:\Users\user\OneDrive\Desktop\objectBiydaalt\ShopManager.java. Using fallback presentation compiler.

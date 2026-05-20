@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java:java/lang/Exception#
+file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+empty definition using pc, found symbol in pc: java/lang/Exception#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 8138
+uri: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+text:
+```scala
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -190,11 +201,11 @@ public class AdminGUI extends JFrame {
             JOptionPane.showMessageDialog(this, "Барааны мэдээлэл шинэчлэгдлээ!");
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(this, "Үнэ болон тоог зөвхөн тоон утгаар (жишээ нь: 15000) оруулна уу!\nҮсэг эсвэл тусгай тэмдэгт оруулж болохгүй.");
-        } catch (Exception ex) {
+        } catch (Except@@ion ex) {
             JOptionPane.showMessageDialog(this, "Алдаа гарлаа: " + ex.getMessage());
         }
-       }
-     });
+    }
+});
 
         // 3. БАРАА УСТГАХ
         btnDelete.addActionListener(e -> {
@@ -224,3 +235,9 @@ public class AdminGUI extends JFrame {
         }
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: java/lang/Exception#

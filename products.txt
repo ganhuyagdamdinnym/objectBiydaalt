@@ -3,3 +3,4 @@ P001,Laptop Bag,45000.0,5
 2,Samsung,340000.0,23
 23,iphone,1000000.0,6
 E001,Smartphone,1200000.0,7
+1,test,199999.0,9
