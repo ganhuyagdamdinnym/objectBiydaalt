@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java:javax/swing/JScrollPane#
+file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+empty definition using pc, found symbol in pc: javax/swing/JScrollPane#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1398
+uri: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+text:
+```scala
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -34,7 +45,7 @@ public class AdminGUI extends JFrame {
         table.setRowHeight(28);
         table.setFont(new Font("SansSerif", Font.PLAIN, 13));
         table.getTableHeader().setFont(new Font("SansSerif", Font.BOLD, 13));
-        add(new JScrollPane(table), BorderLayout.CENTER);
+        add(new JScro@@llPane(table), BorderLayout.CENTER);
 
        
         JPanel btnPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 8, 8));
@@ -198,3 +209,9 @@ public class AdminGUI extends JFrame {
         }
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: javax/swing/JScrollPane#

@@ -52,7 +52,7 @@ public class BasketGUI extends JFrame {
         JOptionPane.showMessageDialog(this, "Захиалга амжилттай!");
         shop.removeBugd(); // Сагсыг хоослох
         
-        // ЧУХАЛ: Сагс хоосорсон тул дэлгэцийг шууд REFRESH (шинэчилж) хийнэ
+       
         updateCards(cardPanel, totalLabel, shop);
     }
     private void updateCards(JPanel cardPanel, JLabel totalLabel, ShopManager shop) {

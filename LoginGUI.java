@@ -78,7 +78,7 @@ public class LoginGUI extends JFrame {
         buttonPanel.add(Box.createRigidArea(new Dimension(0, 8))); // Товч хоорондын зай
         buttonPanel.add(adminBtn);
 
-        // ── 4. ҮНДСЭН ПАНЕЛ РУУ ДАРААЛЛААР НЬ НЭМЭХ ───────────────────────
+        
         panel.add(userLabel);
         panel.add(Box.createRigidArea(new Dimension(0, 5)));
         panel.add(usernameField);
@@ -88,7 +88,7 @@ public class LoginGUI extends JFrame {
         panel.add(passwordField);
         panel.add(Box.createRigidArea(new Dimension(0, 20))); // Инпут болон Товчны хоорондох зай
         
-        // Одоо бэлэн болсон товчны панелаа үндсэн панелд нэмнэ
+      
         panel.add(buttonPanel);
 
         add(panel);

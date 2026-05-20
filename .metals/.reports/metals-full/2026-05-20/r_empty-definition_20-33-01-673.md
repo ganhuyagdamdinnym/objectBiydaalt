@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java:javax/swing/JOptionPane#OK_CANCEL_OPTION.
+file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+empty definition using pc, found symbol in pc: javax/swing/JOptionPane#OK_CANCEL_OPTION.
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 3425
+uri: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+text:
+```scala
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -25,7 +36,7 @@ public class AdminGUI extends JFrame {
         add(title, BorderLayout.NORTH);
 
         // Хүснэгт хэсэг
-        String[] columns = {"ID", "Нэр", "Тоо", "Үнэ",};
+        String[] columns = {"ID", "Нэр", "Тоо", "Үнэ", "Төрөл"};
         tableModel = new DefaultTableModel(columns, 0) {
             @Override 
             public boolean isCellEditable(int r, int c) { return false; }
@@ -36,20 +47,21 @@ public class AdminGUI extends JFrame {
         table.getTableHeader().setFont(new Font("SansSerif", Font.BOLD, 13));
         add(new JScrollPane(table), BorderLayout.CENTER);
 
-       
+        // Товчлуурууд байрлах панел
         JPanel btnPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 8, 8));
 
         JButton btnAdd     = new JButton("+ Бараа нэмэх");
         JButton btnUpdate  = new JButton("Шинэчлэх / Засах");
         JButton btnDelete  = new JButton("Устгах");
 
+        // Нэмэх товчны дизайн
         btnAdd.setBackground(new Color(40, 167, 69)); // Ногоон өнгө
         btnAdd.setForeground(Color.WHITE);
         btnAdd.setFocusPainted(false);
         btnAdd.setBorderPainted(false);
         btnAdd.setOpaque(true);
 
-       
+        // Шинэчлэх товчны дизайн
         btnUpdate.setBackground(new Color(83, 74, 183)); // Хөх нил өнгө
         btnUpdate.setForeground(Color.WHITE);
         btnUpdate.setFocusPainted(false);
@@ -81,12 +93,12 @@ public class AdminGUI extends JFrame {
             form.add(new JLabel("Тоо:"));   form.add(qtyField);
 
             int result = JOptionPane.showConfirmDialog(
-                this, form, "Бараа нэмэх", JOptionPane.OK_CANCEL_OPTION
+                this, form, "Бараа нэмэх", JOptionPane.OK_CANCEL_OP@@TION
             );
 
             if (result == JOptionPane.OK_OPTION) {
                 try {
-                   
+                    String checkId=Product.getId();
                     String id    = idField.getText().trim();
                     String name  = nameField.getText().trim();
                     double price = Double.parseDouble(priceField.getText().trim());
@@ -94,19 +106,6 @@ public class AdminGUI extends JFrame {
 
                     if (id.isEmpty() || name.isEmpty()) {
                         JOptionPane.showMessageDialog(this, "ID эсвэл Нэр хоосон байж болохгүй!");
-                        return;
-                    }
-                    boolean isDuplicate = false;
-                    for (Product p : shop.getProducts()) {
-                        // Энд p.getId() функц таны Product класс дотор байгаа гэж үзэв
-                        if (p.getId().equalsIgnoreCase(id)) {
-                            isDuplicate = true;
-                            break;
-                        }
-                    }
-
-                    if (isDuplicate) {
-                        JOptionPane.showMessageDialog(this, "Алдаа: '" + id + "' ID-тай бараа аль хэдийн бүртгэгдсэн байна!", "Алдаа", JOptionPane.ERROR_MESSAGE);
                         return;
                     }
 
@@ -119,7 +118,7 @@ public class AdminGUI extends JFrame {
             }
         });
 
-   
+        // 2. БАРАА ШИНЭЧЛЭХ (ЗАСАХ)
         btnUpdate.addActionListener(e -> {
             int row = table.getSelectedRow();
             if (row == -1) {
@@ -198,3 +197,9 @@ public class AdminGUI extends JFrame {
         }
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: javax/swing/JOptionPane#OK_CANCEL_OPTION.

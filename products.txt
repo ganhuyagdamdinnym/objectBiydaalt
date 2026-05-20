@@ -1,5 +1,5 @@
 E002,Mouse,25000.0,6
-P001,Laptop Bag,45000.0,0
-E001,Smartphone,1200000.0,9
-8,macbook,6000000.0,2
-23,iphone,1.2E7,6
+P001,Laptop Bag,45000.0,6
+2,Samsung,340000.0,30
+23,iphone,1000000.0,6
+E001,Smartphone,1200000.0,7

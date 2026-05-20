@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java:javax/swing/JTable#setRowHeight().
+file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+empty definition using pc, found symbol in pc: javax/swing/JTable#setRowHeight().
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1225
+uri: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+text:
+```scala
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -31,7 +42,7 @@ public class AdminGUI extends JFrame {
             public boolean isCellEditable(int r, int c) { return false; }
         };
         table = new JTable(tableModel);
-        table.setRowHeight(28);
+        table.setRowHei@@ght(28);
         table.setFont(new Font("SansSerif", Font.PLAIN, 13));
         table.getTableHeader().setFont(new Font("SansSerif", Font.BOLD, 13));
         add(new JScrollPane(table), BorderLayout.CENTER);
@@ -198,3 +209,9 @@ public class AdminGUI extends JFrame {
         }
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: javax/swing/JTable#setRowHeight().

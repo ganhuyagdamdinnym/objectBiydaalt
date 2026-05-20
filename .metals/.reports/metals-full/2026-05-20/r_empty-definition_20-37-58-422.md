@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java:javax/swing/table/DefaultTableModel#
+file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+empty definition using pc, found symbol in pc: javax/swing/table/DefaultTableModel#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1030
+uri: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/AdminGUI.java
+text:
+```scala
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -26,7 +37,7 @@ public class AdminGUI extends JFrame {
 
         // Хүснэгт хэсэг
         String[] columns = {"ID", "Нэр", "Тоо", "Үнэ",};
-        tableModel = new DefaultTableModel(columns, 0) {
+        tableModel = new DefaultTableM@@odel(columns, 0) {
             @Override 
             public boolean isCellEditable(int r, int c) { return false; }
         };
@@ -198,3 +209,9 @@ public class AdminGUI extends JFrame {
         }
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: javax/swing/table/DefaultTableModel#
