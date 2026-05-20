@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class LoginGUI extends JFrame {
-    private static final String FILE_NAME = "users.csv";
+    private static final String FILE_NAME = "users.txt";
     private JTextField usernameField;
     private JPasswordField passwordField;
     private java.util.List<User> users = new ArrayList<>();

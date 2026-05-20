@@ -2,67 +2,127 @@ import java.io.*;
 import java.util.*;
 
 class ShopManager {
-    private static final String FILE_NAME = "products.csv";
+    private static final String FILE_NAME = "products.txt";
 
-    // d. Бүрдмэл харьцаа (Composition)
+    
     private List<Product> products = new ArrayList<>();
     private List<Basket> basket = new ArrayList<>();
 
-    // Байгуулагч - програм эхлэхэд файлаас уншина
+    
     public ShopManager() {
         loadFromFile();
     }
 
     public void addProduct(Product p) {
-        products.add(p);
-        saveToFile(FILE_NAME);
+        try {
+            products.add(p);
+            saveToFile(FILE_NAME);
+        } catch (Exception e) {
+            System.out.println("Бараа нэмэхэд алдаа гарлаа: " + e.getMessage());
+        }
     }
 
     public void removeProductAfterBuy(String id, int quantity) {
-        for (Product p : products) {
-            if (p.getId().equals(id)) {
-                int newQuantity = p.quantity - quantity;
-                if (newQuantity >= 0) {
-                    p.setQuantity(newQuantity);
+        try {
+            for (Product p : products) {
+                if (p.getId().equals(id)) {
+                    int newQuantity = p.getQuantity() - quantity;
+                    if (newQuantity >= 0) {
+                        p.setQuantity(newQuantity);
+                    }
                 }
             }
+            saveToFile(FILE_NAME);
+        } catch (Exception e) {
+            System.out.println("Худалдан авалтын дараа тоо хэмжээ хасахад алдаа гарлаа: " + e.getMessage());
         }
-        saveToFile(FILE_NAME);
     }
     
-    public void removeBugd(){
-         basket.clear();
+    public void removeBugd() {
+        try {
+            basket.clear();
+        } catch (Exception e) {
+            System.out.println("Сагсыг цэвэрлэхэд алдаа гарлаа: " + e.getMessage());
+        }
     }
+
     public void removeProductFromBasket(String id, int quantity) {
-        for (Basket b : basket) {
-            if (b.getId().equals(id)) {
-                int newQuantity = b.quantity - quantity;
-                if (newQuantity <= 0) {
-                    basket.remove(b);
-                } else {
-                    b.setQuantity(newQuantity);
+        try {
+            Iterator<Basket> iterator = basket.iterator();
+            while (iterator.hasNext()) {
+                Basket b = iterator.next();
+                if (b.getId().equals(id)) {
+                    int newQuantity = b.getQuantity() - quantity;
+                    if (newQuantity <= 0) {
+                        iterator.remove(); // Safe removal using Iterator
+                    } else {
+                        b.setQuantity(newQuantity);
+                    }
+                    return;
                 }
-                return;
             }
+        } catch (Exception e) {
+            System.out.println("Сагснаас бараа устгахад алдаа гарлаа: " + e.getMessage());
+        }
+    }
+
+   
+    public void addProductReturn(String id, int quantity) {
+        try {
+           
+            for (Product p : products) {
+                if (p.getId().equals(id)) {
+                    int newQuantity = p.getQuantity() + quantity;
+                    p.setQuantity(newQuantity);
+                    break;
+                }
+            }
+           
+            saveToFile(FILE_NAME);
+
+          
+            Iterator<Basket> iterator = basket.iterator();
+            while (iterator.hasNext()) {
+                Basket b = iterator.next();
+                if (b.getId().equals(id)) {
+                    int newQuantity = b.getQuantity() - quantity;
+                    if (newQuantity <= 0) {
+                        iterator.remove();
+                    } else {
+                        b.setQuantity(newQuantity);
+                    }
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Бараа буцаан олгоход алдаа гарлаа: " + e.getMessage());
         }
     }
 
     public void removeProduct(String id) {
-        products.removeIf(p -> p.getId().equals(id));
-        saveToFile(FILE_NAME);
+        try {
+            products.removeIf(p -> p.getId().equals(id));
+            saveToFile(FILE_NAME);
+        } catch (Exception e) {
+            System.out.println("Барааг устгахад алдаа гарлаа: " + e.getMessage());
+        }
     }
 
     public void addProductToBasket(Basket p) {
-        for (Basket b : basket) {
-            if (b.getId().equals(p.getId())) {
-                int newQty = b.getQuantity() + p.getQuantity();
-                basket.set(basket.indexOf(b), new Basket(b.getId(), b.getName(), b.getPrice(), newQty));
-                System.out.println("Тоо шинэчлэгдлээ: " + b.getName() + " x" + newQty);
-                return;
+        try {
+            for (Basket b : basket) {
+                if (b.getId().equals(p.getId())) {
+                    int newQty = b.getQuantity() + p.getQuantity();
+                    b.setQuantity(newQty);
+                    System.out.println("Тоо шинэчлэгдлээ: " + b.getName() + " x" + newQty);
+                    return;
+                }
             }
+            basket.add(p);
+            System.out.println("Сагсанд нэмэгдлээ: " + p.getName() + " x" + p.getQuantity());
+        } catch (Exception e) {
+            System.out.println("Сагсанд бараа нэмэхэд алдаа гарлаа: " + e.getMessage());
         }
-        basket.add(p);
-        System.out.println("Сагсанд нэмэгдлээ: " + p.getName() + " x" + p.getQuantity());
     }
 
     public List<Product> getProducts() {
@@ -93,6 +153,7 @@ class ShopManager {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
+            products.clear(); // Давхардаж уншихаас сэргийлнэ
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
                 if (parts.length < 4) continue;
@@ -103,24 +164,32 @@ class ShopManager {
                 products.add(new Product(id, name, price, qty));
             }
             System.out.println("Файлаас амжилттай уншлаа.");
-        } catch (IOException e) {
+        } catch (IOException | NumberFormatException e) {
             System.out.println("Файл уншихад алдаа гарлаа: " + e.getMessage());
         }
     }
 
     // e. Хайлтын алгоритм (Search) - Нэрээр хайх
     public void searchByName(String name) {
-        boolean found = false;
-        for (Product p : products) {
-            if (p.name.equalsIgnoreCase(name)) {
-                p.displayInfo();
-                found = true;
+        try {
+            boolean found = false;
+            for (Product p : products) {
+                if (p.getName().equalsIgnoreCase(name)) {
+                    p.displayInfo();
+                    found = true;
+                }
             }
+            if (!found) System.out.println("Бараа олдсонгүй.");
+        } catch (Exception e) {
+            System.out.println("Хайлт хийхэд алдаа гарлаа: " + e.getMessage());
         }
-        if (!found) System.out.println("Бараа олдсонгүй.");
     }
 
     public void showAll() {
-        for (Product p : products) p.displayInfo();
+        try {
+            for (Product p : products) p.displayInfo();
+        } catch (Exception e) {
+            System.out.println("Жагсаалтыг харуулахад алдаа гарлаа: " + e.getMessage());
+        }
     }
 }

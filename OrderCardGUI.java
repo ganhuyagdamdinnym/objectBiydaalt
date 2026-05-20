@@ -67,28 +67,37 @@ public class OrderCardGUI extends JPanel {
     }
 
     private void minusProductFromBasket(Basket b) {
-        String input = JOptionPane.showInputDialog(
-            null,
-            b.getName() + " - хэдэн ширхэг хасах вэ?",
-            "Тоо оруулах",
-            JOptionPane.QUESTION_MESSAGE
-        );
-        if (input == null) return;
         try {
+            String input = JOptionPane.showInputDialog(
+                null,
+                b.getName() + " - хэдэн ширхэг хасах вэ?",
+                "Тоо оруулах",
+                JOptionPane.QUESTION_MESSAGE
+            );
+            if (input == null) return; // Цуцлах товч дарагдсан үед
+
             int qty = Integer.parseInt(input.trim());
             if (qty <= 0) {
-                JOptionPane.showMessageDialog(null, "0-ээс их тоо оруулна уу!");
+                JOptionPane.showMessageDialog(null, "0-ээс их тоо оруулна уу!", "Алдаа", JOptionPane.WARNING_MESSAGE);
                 return;
             }
             if (qty > b.getQuantity()) {
-                JOptionPane.showMessageDialog(null, "Хасах тоо хэтэрлээ! (Үлдэгдэл: " + b.getQuantity() + " ш)");
+                JOptionPane.showMessageDialog(null, "Хасах тоо хэтэрлээ! (Сагсанд байгаа: " + b.getQuantity() + " ш)", "Алдаа", JOptionPane.WARNING_MESSAGE);
                 return;
             }
-            shop.removeProductFromBasket(b.getId(), qty);
-            JOptionPane.showMessageDialog(null, b.getName() + " x" + qty + " ширхэг хасагдлаа!");
-            onRefresh.run();
+
+            // Шинэчлэгдсэн логик: ShopManager-ийн функц дуудагдаж файл болон жагсаалтуудыг зэрэг шинэчилнэ
+            shop.addProductReturn(b.getId(), qty);
+            
+            JOptionPane.showMessageDialog(null, b.getName() + " x" + qty + " ширхэг сагснаас хасагдаж, лангуу руу буцлаа!");
+            
+            if (onRefresh != null) {
+                onRefresh.run(); // Интерфэйсийг дахин зурах (refresh)
+            }
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "Зөвхөн тоо оруулна уу!");
+            JOptionPane.showMessageDialog(null, "Зөвхөн бүхэл тоо оруулна уу!", "Алдаа", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Алдаа гарлаа: " + e.getMessage(), "Алдаа", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -113,7 +122,10 @@ public class OrderCardGUI extends JPanel {
     }
 
     private JLabel makeBadge(String type) {
-        JLabel lbl = new JLabel(type) {
+        // Хэрэв төрөл (type) нь null байвал алдаа гарахаас сэргийлж хоосон текст онооно
+        final String badgeType = (type != null) ? type : "";
+        
+        JLabel lbl = new JLabel(badgeType) {
             @Override
             protected void paintComponent(Graphics g2) {
                 Graphics2D g = (Graphics2D) g2.create();
@@ -127,7 +139,8 @@ public class OrderCardGUI extends JPanel {
         lbl.setOpaque(false);
         lbl.setFont(new Font("SansSerif", Font.BOLD, 11));
         lbl.setBorder(BorderFactory.createEmptyBorder(3, 8, 3, 8));
-        switch (type) {
+        
+        switch (badgeType) {
             case "Electronic": lbl.setBackground(new Color(230,241,251)); lbl.setForeground(new Color(12,68,124));  break;
             case "Clothing":   lbl.setBackground(new Color(238,237,254)); lbl.setForeground(new Color(60,52,137));  break;
             case "Food":       lbl.setBackground(new Color(234,243,222)); lbl.setForeground(new Color(39,80,10));   break;
