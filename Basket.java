@@ -12,6 +12,10 @@ public class Basket {
         this.quantity=quantity;
     }
 
+
+    public void removeAll(){
+        removeAll();
+    }
  public String  getId()       { return id; }
 public String  getName()     { return name; }
 public double  getPrice()    { return price; }

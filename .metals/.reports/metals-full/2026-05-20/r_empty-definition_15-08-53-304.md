@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/LoginGUI.java:java/awt/Component#
+file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/LoginGUI.java
+empty definition using pc, found symbol in pc: java/awt/Component#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 2046
+uri: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/LoginGUI.java
+text:
+```scala
 import javax.swing.*;
 import javax.swing.border.AbstractBorder;
 import java.awt.*;
@@ -20,65 +31,43 @@ public class LoginGUI extends JFrame {
         loadUsersFromFile(); 
 
         setTitle("Нэвтрэх");
-        setSize(400, 320); // Товчлуурууд доошоо багтах зайг бага зэрэг нэмэв
+        setSize(400, 300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        // setBackground(new Color(0,229,100));;
 
         JPanel panel = new JPanel();
-        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        // panel.setBackground(new Color(2,3,4));
+        panel.setLayout(new BoxLayout(panel, BoxLayout. Y_AXIS));
+        // panel.setLayout(new BoxLayout(panel, BoxLayout.CENTER));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 40, 20, 40));
 
-       
         JLabel userLabel = new JLabel("Хэрэглэгчийн нэр");
-        userLabel.setAlignmentX(Component.LEFT_ALIGNMENT); 
-        
         usernameField = new JTextField();
         usernameField.setMaximumSize(new Dimension(Integer.MAX_VALUE, 34));
         usernameField.setBorder(new RoundedBorder(8));
-        usernameField.setAlignmentX(Component.LEFT_ALIGNMENT);
 
         JLabel passLabel = new JLabel("Нууц үг");
-        passLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
-        
         passwordField = new JPasswordField();
         passwordField.setMaximumSize(new Dimension(Integer.MAX_VALUE, 34));
         passwordField.setBorder(new RoundedBorder(8));
-        passwordField.setAlignmentX(Component.LEFT_ALIGNMENT); 
 
-   
-        JPanel buttonPanel = new JPanel();
-        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
-        buttonPanel.setOpaque(false); 
-        // ЭНЭ ЧУХАЛ: Товчны панел өөрөө үндсэн панелын төвд байрлах ёстой
-        buttonPanel.setAlignmentX(Component.LEFT_ALIGNMENT); 
-        buttonPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 120));
-
-        // ── 3. ТОВЧЛУУРУУДЫГ ҮҮСГЭХ БА ТЭДНИЙГ ГОЛЛУУЛАХ ──────────────────
         JButton loginBtn    = new RoundedButton("Нэвтрэх",         new Color(83, 74, 183), Color.WHITE);
         JButton registerBtn = new RoundedButton("Бүртгүүлэх",      Color.WHITE,            new Color(60, 60, 60));
         JButton adminBtn    = new RoundedButton("Админаар нэвтрэх", new Color(83, 74, 183), Color.WHITE);
 
         loginBtn.setMaximumSize(new Dimension(Integer.MAX_VALUE, 34));
+        loginBtn.setAlignmentX(Compo@@nent.CENTER_ALIGNMENT);
         registerBtn.setMaximumSize(new Dimension(Integer.MAX_VALUE, 34));
+        // registerBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
+        // registerBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
         adminBtn.setMaximumSize(new Dimension(Integer.MAX_VALUE, 34));
-
-        // Дэд панел дотроо бүгд голлоно
-        loginBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
-        registerBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
-        adminBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
+        // adminBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         loginBtn.addActionListener(e -> login());
         registerBtn.addActionListener(e -> register());
         adminBtn.addActionListener(e -> loginAsAdmin());
 
-        // Товчлууруудыг өөрийнх нь панел руу дарааллаар нь нэмэх
-        buttonPanel.add(loginBtn);
-        buttonPanel.add(Box.createRigidArea(new Dimension(0, 8))); // Товч хоорондын зай
-        buttonPanel.add(registerBtn);
-        buttonPanel.add(Box.createRigidArea(new Dimension(0, 8))); // Товч хоорондын зай
-        buttonPanel.add(adminBtn);
-
-        // ── 4. ҮНДСЭН ПАНЕЛ РУУ ДАРААЛЛААР НЬ НЭМЭХ ───────────────────────
         panel.add(userLabel);
         panel.add(Box.createRigidArea(new Dimension(0, 5)));
         panel.add(usernameField);
@@ -86,10 +75,12 @@ public class LoginGUI extends JFrame {
         panel.add(passLabel);
         panel.add(Box.createRigidArea(new Dimension(0, 5)));
         panel.add(passwordField);
-        panel.add(Box.createRigidArea(new Dimension(0, 20))); // Инпут болон Товчны хоорондох зай
-        
-        // Одоо бэлэн болсон товчны панелаа үндсэн панелд нэмнэ
-        panel.add(buttonPanel);
+        panel.add(Box.createRigidArea(new Dimension(0, 15)));
+        panel.add(loginBtn);
+        panel.add(Box.createRigidArea(new Dimension(0, 5)));
+        panel.add(registerBtn);
+        panel.add(Box.createRigidArea(new Dimension(0, 5)));
+        panel.add(adminBtn);
 
         add(panel);
     }
@@ -238,3 +229,9 @@ public class LoginGUI extends JFrame {
         }
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: java/awt/Component#

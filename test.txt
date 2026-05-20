@@ -1,0 +1,5 @@
+testlabel.add(Box.createHorizontalGlue()); // Баруун тийш сунаж, товчнуудыг зүүн тийш шахна
+testlabel.add(Box.createHorizontalGlue()); // Зүүн тийш сунаж, товчнуудыг баруун тийш шахна elementuudiin deer
+testlabel.add(loginBtn);
+    testlabel.add(Box.createHorizontalGlue()); // Голдоо сунаж, товчнуудыг хоёр зах руу шахна
+    testlabel.add(registerBtn);

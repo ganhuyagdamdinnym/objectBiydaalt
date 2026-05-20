@@ -14,7 +14,7 @@ public class ShopGUI extends JFrame {
     public ShopGUI(ShopManager manager) {
         this.manager = manager;
         setTitle("Онлайн Дэлгүүрийн Систем");
-        setSize(970, 600);
+        setSize(960, 600);
         setMinimumSize(new Dimension(700, 480));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);

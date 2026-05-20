@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/BasketGUI.java:_empty_/ShopManager#
+file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/BasketGUI.java
+empty definition using pc, found symbol in pc: _empty_/ShopManager#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 2015
+uri: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/BasketGUI.java
+text:
+```scala
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
@@ -32,7 +43,7 @@ public class BasketGUI extends JFrame {
         btnOrder.setFocusPainted(false);
         btnOrder.setBorderPainted(false);
         btnOrder.setOpaque(true);
-        btnOrder.addActionListener(e -> removePisda(shop, cardPanel, totalLabel));
+        btnOrder.addActionListener(e ->removePisda());
 
         JPanel bottomPanel = new JPanel(new BorderLayout());
         bottomPanel.setBorder(BorderFactory.createEmptyBorder(8, 20, 8, 20));
@@ -43,19 +54,11 @@ public class BasketGUI extends JFrame {
         updateCards(cardPanel, totalLabel, shop);
     }
     
-  private void removePisda(ShopManager shop, JPanel cardPanel, JLabel totalLabel) {
-        if (shop.getBasketProducts().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Сагс аль хэдийн хоосон байна!");
-            return;
-        }
-        
+    private void removePisda(){
         JOptionPane.showMessageDialog(this, "Захиалга амжилттай!");
-        shop.removeBugd(); // Сагсыг хоослох
-        
-        // ЧУХАЛ: Сагс хоосорсон тул дэлгэцийг шууд REFRESH (шинэчилж) хийнэ
-        updateCards(cardPanel, totalLabel, shop);
+        shop.removeBugd();
     }
-    private void updateCards(JPanel cardPanel, JLabel totalLabel, ShopManager shop) {
+    private void updateCards(JPanel cardPanel, JLabel totalLabel, @@ShopManager shop) {
         cardPanel.removeAll();
 
         List<Basket> items = shop.getBasketProducts();
@@ -80,3 +83,9 @@ public class BasketGUI extends JFrame {
         cardPanel.repaint();
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/ShopManager#

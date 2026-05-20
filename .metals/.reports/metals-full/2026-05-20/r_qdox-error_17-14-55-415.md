@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/BasketGUI.java
+file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/BasketGUI.java
+### com.thoughtworks.qdox.parser.ParseException: syntax error @[49,5]
+
+error in qdox parser
+file content:
+```java
+offset: 1931
+uri: file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/BasketGUI.java
+text:
+```scala
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
@@ -32,7 +43,10 @@ public class BasketGUI extends JFrame {
         btnOrder.setFocusPainted(false);
         btnOrder.setBorderPainted(false);
         btnOrder.setOpaque(true);
-        btnOrder.addActionListener(e -> removePisda(shop, cardPanel, totalLabel));
+        btnOrder.addActionListener(e ->removePisda()
+            // JOptionPane.showMessageDialog(this, "Захиалга амжилттай!")
+            // removeAll();
+        );
 
         JPanel bottomPanel = new JPanel(new BorderLayout());
         bottomPanel.setBorder(BorderFactory.createEmptyBorder(8, 20, 8, 20));
@@ -43,18 +57,7 @@ public class BasketGUI extends JFrame {
         updateCards(cardPanel, totalLabel, shop);
     }
     
-  private void removePisda(ShopManager shop, JPanel cardPanel, JLabel totalLabel) {
-        if (shop.getBasketProducts().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Сагс аль хэдийн хоосон байна!");
-            return;
-        }
-        
-        JOptionPane.showMessageDialog(this, "Захиалга амжилттай!");
-        shop.removeBugd(); // Сагсыг хоослох
-        
-        // ЧУХАЛ: Сагс хоосорсон тул дэлгэцийг шууд REFRESH (шинэчилж) хийнэ
-        updateCards(cardPanel, totalLabel, shop);
-    }
+    p@@rivate void 
     private void updateCards(JPanel cardPanel, JLabel totalLabel, ShopManager shop) {
         cardPanel.removeAll();
 
@@ -80,3 +83,41 @@ public class BasketGUI extends JFrame {
         cardPanel.repaint();
     }
 }
+```
+
+```
+
+
+
+#### Error stacktrace:
+
+```
+com.thoughtworks.qdox.parser.impl.Parser.yyerror(Parser.java:2025)
+	com.thoughtworks.qdox.parser.impl.Parser.yyparse(Parser.java:2147)
+	com.thoughtworks.qdox.parser.impl.Parser.parse(Parser.java:2006)
+	com.thoughtworks.qdox.library.SourceLibrary.parse(SourceLibrary.java:232)
+	com.thoughtworks.qdox.library.SourceLibrary.parse(SourceLibrary.java:190)
+	com.thoughtworks.qdox.library.SourceLibrary.addSource(SourceLibrary.java:94)
+	com.thoughtworks.qdox.library.SourceLibrary.addSource(SourceLibrary.java:89)
+	com.thoughtworks.qdox.library.SortedClassLibraryBuilder.addSource(SortedClassLibraryBuilder.java:162)
+	com.thoughtworks.qdox.JavaProjectBuilder.addSource(JavaProjectBuilder.java:174)
+	scala.meta.internal.mtags.JavaMtags.indexRoot(JavaMtags.scala:49)
+	scala.meta.internal.metals.SemanticdbDefinition$.foreachWithReturnMtags(SemanticdbDefinition.scala:99)
+	scala.meta.internal.metals.Indexer.indexSourceFile(Indexer.scala:560)
+	scala.meta.internal.metals.Indexer.$anonfun$reindexWorkspaceSources$3(Indexer.scala:691)
+	scala.meta.internal.metals.Indexer.$anonfun$reindexWorkspaceSources$3$adapted(Indexer.scala:688)
+	scala.collection.IterableOnceOps.foreach(IterableOnce.scala:630)
+	scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:628)
+	scala.collection.AbstractIterator.foreach(Iterator.scala:1313)
+	scala.meta.internal.metals.Indexer.reindexWorkspaceSources(Indexer.scala:688)
+	scala.meta.internal.metals.MetalsLspService.$anonfun$onChange$2(MetalsLspService.scala:940)
+	scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	scala.concurrent.Future$.$anonfun$apply$1(Future.scala:691)
+	scala.concurrent.impl.Promise$Transformation.run(Promise.scala:500)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	java.base/java.lang.Thread.run(Thread.java:1474)
+```
+#### Short summary: 
+
+QDox parse error in file:///C:/Users/user/OneDrive/Desktop/objectBiydaalt/BasketGUI.java
