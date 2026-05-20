@@ -1,25 +1,38 @@
 import javax.swing.*;
-import javax.swing.border.AbstractBorder;
 import javax.swing.border.Border;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.RoundRectangle2D;
 
 public class ProductCard extends JPanel {
-    ShopManager shop = new ShopManager();
+    private ShopManager shop;
+    private ShopGUI shopGUI;
+
     private static final Color BG_COLOR     = new Color(255, 255, 255);
-    private static final Color BORDER       = new Color(220, 220, 220);
-    private static final Color BORDER_HOVER = new Color(170, 180, 200);
+    private static final Color BORDER_NORM  = new Color(220, 220, 220);
+    private static final Color BORDER_HOVER = new Color(83, 74, 183);
     private static final Color MUTED        = new Color(120, 120, 120);
     private static final Color DIVIDER      = new Color(230, 230, 225);
+    private static final Color ACCENT       = new Color(83, 74, 183);
 
+    // ShopGUI-тэй constructor
+    public ProductCard(Product p, ShopManager shop, ShopGUI shopGUI) {
+        this.shop    = shop;
+        this.shopGUI = shopGUI;
+        buildUI(p);
+    }
+
+    // Хуучин кодтой нийцтэй байлгах
     public ProductCard(Product p, ShopManager shop) {
-        this.shop = shop;
+        this(p, shop, null);
+    }
 
+    private void buildUI(Product p) {
         setLayout(new GridBagLayout());
         setBackground(BG_COLOR);
-        setBorder(makeBorder(BORDER));
-        setPreferredSize(new Dimension(200, 185));
+        setBorder(makeBorder(BORDER_NORM));
+        setPreferredSize(new Dimension(210, 195));
 
         GridBagConstraints g = new GridBagConstraints();
         g.anchor  = GridBagConstraints.WEST;
@@ -28,48 +41,42 @@ public class ProductCard extends JPanel {
         g.fill    = GridBagConstraints.HORIZONTAL;
 
         // Badge
-        g.gridy  = 0;
-        g.insets = new Insets(0, 0, 6, 0);
+        g.gridy = 0; g.insets = new Insets(0, 0, 6, 0);
         add(makeBadge(p.getType()), g);
 
         // Нэр
-        g.gridy  = 1;
-        g.insets = new Insets(0, 0, 2, 0);
+        g.gridy = 1; g.insets = new Insets(0, 0, 2, 0);
         JLabel name = new JLabel(p.getName());
         name.setFont(new Font("SansSerif", Font.BOLD, 15));
         add(name, g);
 
         // ID
-        g.gridy  = 2;
-        g.insets = new Insets(0, 0, 8, 0);
+        g.gridy = 2; g.insets = new Insets(0, 0, 8, 0);
         JLabel id = new JLabel("ID: " + p.getId());
         id.setFont(new Font("SansSerif", Font.PLAIN, 10));
         id.setForeground(MUTED);
         add(id, g);
 
-        // Хуваагч шугам
-        g.gridy  = 3;
-        g.insets = new Insets(0, 0, 8, 0);
+        // Хуваагч
+        g.gridy = 3; g.insets = new Insets(0, 0, 8, 0);
         JSeparator sep = new JSeparator();
         sep.setForeground(DIVIDER);
         add(sep, g);
 
         // Үнэ + тоо
-        g.gridy  = 4;
-        g.insets = new Insets(0, 0, 10, 0);
+        g.gridy = 4; g.insets = new Insets(0, 0, 10, 0);
         add(makeBottom(p), g);
 
-        // Сагсанд нэмэх товч
-        g.gridy  = 5;
-        g.insets = new Insets(0, 0, 0, 0);
-        JButton btnCart = new RoundedButton("Сагсанд нэмэх", new Color(83, 74, 183), Color.WHITE);
+        // Товч
+        g.gridy = 5; g.insets = new Insets(0, 0, 0, 0);
+        JButton btnCart = new RoundedButton("Сагсанд нэмэх", ACCENT, Color.WHITE);
         btnCart.addActionListener(e -> addProductToBasket(p));
         add(btnCart, g);
 
         // Hover
         addMouseListener(new MouseAdapter() {
             @Override public void mouseEntered(MouseEvent e) { setBorder(makeBorder(BORDER_HOVER)); }
-            @Override public void mouseExited (MouseEvent e) { setBorder(makeBorder(BORDER)); }
+            @Override public void mouseExited (MouseEvent e) { setBorder(makeBorder(BORDER_NORM)); }
         });
     }
 
@@ -91,12 +98,14 @@ public class ProductCard extends JPanel {
             this, panel, "Сагсанд нэмэх",
             JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE
         );
-
         if (result != JOptionPane.OK_OPTION) return;
 
         int qty = (int) spinner.getValue();
         shop.addProductToBasket(new Basket(p.getId(), p.getName(), p.getPrice(), qty));
         shop.removeProductAfterBuy(p.getId(), qty);
+
+        if (shopGUI != null) shopGUI.refreshCards();
+
         JOptionPane.showMessageDialog(this, p.getName() + " x" + qty + " ширхэг сагсанд нэмэгдлээ!");
     }
 
@@ -120,7 +129,7 @@ public class ProductCard extends JPanel {
     private Border makeBorder(Color color) {
         return BorderFactory.createCompoundBorder(
             BorderFactory.createLineBorder(color, 1, true),
-            BorderFactory.createEmptyBorder(14, 16, 14, 16)
+            new EmptyBorder(14, 16, 14, 16)
         );
     }
 
@@ -138,25 +147,18 @@ public class ProductCard extends JPanel {
         };
         lbl.setOpaque(false);
         lbl.setFont(new Font("SansSerif", Font.BOLD, 11));
-        lbl.setBorder(BorderFactory.createEmptyBorder(3, 8, 3, 8));
+        lbl.setBorder(new EmptyBorder(3, 8, 3, 8));
         switch (type) {
-            case "Electronic": lbl.setBackground(new Color(230,241,251));
-                               lbl.setForeground(new Color(12,68,124));  break;
-            case "Clothing":   lbl.setBackground(new Color(238,237,254));
-                               lbl.setForeground(new Color(60,52,137));  break;
-            case "Food":       lbl.setBackground(new Color(234,243,222));
-                               lbl.setForeground(new Color(39,80,10));   break;
-            default:           lbl.setBackground(new Color(241,239,232));
-                               lbl.setForeground(new Color(68,68,65));
+            case "Electronic": lbl.setBackground(new Color(230,241,251)); lbl.setForeground(new Color(12,68,124));  break;
+            case "Clothing":   lbl.setBackground(new Color(238,237,254)); lbl.setForeground(new Color(60,52,137));  break;
+            case "Food":       lbl.setBackground(new Color(234,243,222)); lbl.setForeground(new Color(39,80,10));   break;
+            default:           lbl.setBackground(new Color(241,239,232)); lbl.setForeground(new Color(68,68,65));
         }
         return lbl;
     }
 
-   
-
     static class RoundedButton extends JButton {
         private final Color bg;
-
         RoundedButton(String text, Color bg, Color fg) {
             super(text);
             this.bg = bg;
@@ -168,18 +170,11 @@ public class ProductCard extends JPanel {
             setFont(new Font("SansSerif", Font.PLAIN, 11));
             setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         }
-
         @Override
         protected void paintComponent(Graphics g) {
             Graphics2D g2 = (Graphics2D) g.create();
             g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-            if (getModel().isPressed()) {
-                g2.setColor(bg.darker());
-            } else if (getModel().isRollover()) {
-                g2.setColor(bg.darker());
-            } else {
-                g2.setColor(bg);
-            }
+            g2.setColor(getModel().isPressed() || getModel().isRollover() ? bg.darker() : bg);
             g2.fill(new RoundRectangle2D.Float(0, 0, getWidth(), getHeight(), 10, 10));
             g2.dispose();
             super.paintComponent(g);

@@ -2,37 +2,45 @@ import javax.swing.*;
 import javax.swing.border.AbstractBorder;
 import java.awt.*;
 import java.awt.geom.RoundRectangle2D;
+import java.io.*;
+import java.util.ArrayList;
 
 public class LoginGUI extends JFrame {
+    private static final String FILE_NAME = "users.csv";
     private JTextField usernameField;
     private JPasswordField passwordField;
-    private java.util.List<User> users = new java.util.ArrayList<>();
+    private java.util.List<User> users = new ArrayList<>();
     private ShopManager shop;
+    private ShopGUI shopGUI;
 
-    public LoginGUI(ShopManager shop) {
-        this.shop = shop;
+    public LoginGUI(ShopManager shop, ShopGUI shopGUI) {
+        this.shop    = shop;
+        this.shopGUI = shopGUI;
 
-        setTitle("Login");
-        setSize(400, 280);
+        loadUsersFromFile(); // програм эхлэхэд хэрэглэгчдийг уншина
+
+        setTitle("Нэвтрэх");
+        setSize(400, 300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
 
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 40, 20, 40));
 
-        JLabel userLabel = new JLabel("Username");
+        JLabel userLabel = new JLabel("Хэрэглэгчийн нэр");
         usernameField = new JTextField();
         usernameField.setMaximumSize(new Dimension(Integer.MAX_VALUE, 34));
         usernameField.setBorder(new RoundedBorder(8));
 
-        JLabel passLabel = new JLabel("Password");
+        JLabel passLabel = new JLabel("Нууц үг");
         passwordField = new JPasswordField();
         passwordField.setMaximumSize(new Dimension(Integer.MAX_VALUE, 34));
         passwordField.setBorder(new RoundedBorder(8));
 
-        JButton loginBtn    = new RoundedButton("Нэвтрэх",          new Color(83, 74, 183), Color.WHITE);
-        JButton registerBtn = new RoundedButton("Бүртгүүлэх",       Color.WHITE,            new Color(60, 60, 60));
-        JButton adminBtn    = new RoundedButton("Админаар нэвтрэх",  new Color(83, 74, 183), Color.WHITE);
+        JButton loginBtn    = new RoundedButton("Нэвтрэх",         new Color(83, 74, 183), Color.WHITE);
+        JButton registerBtn = new RoundedButton("Бүртгүүлэх",      Color.WHITE,            new Color(60, 60, 60));
+        JButton adminBtn    = new RoundedButton("Админаар нэвтрэх", new Color(83, 74, 183), Color.WHITE);
 
         loginBtn.setMaximumSize(new Dimension(Integer.MAX_VALUE, 34));
         registerBtn.setMaximumSize(new Dimension(Integer.MAX_VALUE, 34));
@@ -57,11 +65,95 @@ public class LoginGUI extends JFrame {
         panel.add(adminBtn);
 
         add(panel);
-        setLocationRelativeTo(null);
     }
 
-    // ── Дугуй хүрээтэй Input ──────────────────────────────────
+    // ── Бүртгүүлэх ───────────────────────────────────────────
+    private void register() {
+        String user = usernameField.getText().trim();
+        String pass = new String(passwordField.getPassword()).trim();
 
+        if (user.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Хэрэглэгчийн нэрээ оруулна уу!");
+            return;
+        }
+        if (pass.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Нууц үгээ оруулна уу!");
+            return;
+        }
+        for (User u : users) {
+            if (u.getUsername().equals(user)) {
+                JOptionPane.showMessageDialog(this, "Хэрэглэгч аль хэдийн бүртгэлтэй!");
+                return;
+            }
+        }
+
+        users.add(new User("U" + (users.size() + 1), user, pass));
+        saveToFile();
+        usernameField.setText("");
+        passwordField.setText("");
+        JOptionPane.showMessageDialog(this, "Амжилттай бүртгэгдлээ!");
+    }
+
+    // ── Нэвтрэх ──────────────────────────────────────────────
+    private void login() {
+        String user = usernameField.getText().trim();
+        String pass = new String(passwordField.getPassword()).trim();
+
+        for (User u : users) {
+            if (u.getUsername().equals(user) && u.Login(pass)) {
+                JOptionPane.showMessageDialog(this, "Амжилттай нэвтэрлээ!");
+                shopGUI.setVisible(true); // байгаа shopGUI-г нээнэ
+                dispose();
+                return;
+            }
+        }
+        JOptionPane.showMessageDialog(this, "Нэвтрэх мэдээлэл буруу!");
+    }
+
+    // ── Админаар нэвтрэх ─────────────────────────────────────
+    private void loginAsAdmin() {
+        String user = usernameField.getText().trim();
+        String pass = new String(passwordField.getPassword()).trim();
+
+        if (user.equals("admin") && pass.equals("admin123")) {
+            JOptionPane.showMessageDialog(this, "Админаар нэвтэрлээ!");
+            new AdminGUI(shop).setVisible(true); // shopGUI дамжуулна
+            dispose();
+        } else {
+            JOptionPane.showMessageDialog(this, "Админ нэвтрэх мэдээлэл буруу!");
+        }
+    }
+
+    // ── Файлд хадгалах ────────────────────────────────────────
+    private void saveToFile() {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
+            for (User u : users) {
+                writer.write(u.getId() + "," + u.getUsername() + "," + u.getPassword());
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(this, "Файлд хадгалахад алдаа: " + e.getMessage());
+        }
+    }
+
+    // ── Файлаас уншина ────────────────────────────────────────
+    private void loadUsersFromFile() {
+        File file = new File(FILE_NAME);
+        if (!file.exists()) return;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length < 3) continue;
+                users.add(new User(parts[0], parts[1], parts[2]));
+            }
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(this, "Файл уншихад алдаа: " + e.getMessage());
+        }
+    }
+
+    // ── Дугуй хүрээтэй Input ─────────────────────────────────
     static class RoundedBorder extends AbstractBorder {
         private final int radius;
         RoundedBorder(int radius) { this.radius = radius; }
@@ -82,8 +174,7 @@ public class LoginGUI extends JFrame {
         public boolean isBorderOpaque() { return false; }
     }
 
-   
-
+    // ── Дугуй товч ───────────────────────────────────────────
     static class RoundedButton extends JButton {
         private final Color bg;
 
@@ -117,61 +208,6 @@ public class LoginGUI extends JFrame {
             }
             g2.dispose();
             super.paintComponent(g);
-        }
-    }
-
-    // ── Logic (өөрчлөгдөөгүй) ────────────────────────────────
-
-    private void register() {
-        String user = usernameField.getText();
-        String pass = new String(passwordField.getPassword());
-
-        if(user.isEmpty()){
-             JOptionPane.showMessageDialog(this, "Хэрэглэгчийн нэрээ оруулна уу!");
-                return;
-        }else if(pass.isEmpty()){
-            JOptionPane.showMessageDialog(this,"Нууц үгээ оруулна уу!");
-            return;
-        }
-
-        for (User u : users) {
-            if (u.getUsername().equals(user)) {
-                JOptionPane.showMessageDialog(this, "Хэрэглэгч аль хэдийн бүртгэлтэй!");
-                return;
-            }
-        }
-
-        users.add(new User("U" + (users.size() + 1), user, pass));
-        usernameField.setText("");
-        passwordField.setText("");
-        JOptionPane.showMessageDialog(this, "Амжилттай бүртгэгдлээ!");
-    }
-
-    private void login() {
-        String user = usernameField.getText();
-        String pass = new String(passwordField.getPassword());
-
-        for (User u : users) {
-            if (u.getUsername().equals(user) && u.Login(pass)) {
-                JOptionPane.showMessageDialog(this, "Амжилттай нэвтэрлээ!");
-                new ShopGUI(shop).setVisible(true);
-                dispose();
-                return;
-            }
-        }
-        JOptionPane.showMessageDialog(this, "Нэвтрэх мэдээлэл буруу!");
-    }
-
-    private void loginAsAdmin() {
-        String user = usernameField.getText();
-        String pass = new String(passwordField.getPassword());
-
-        if (user.equals("admin") && pass.equals("admin123")) {
-            JOptionPane.showMessageDialog(this, "Админаар нэвтэрлээ!");
-            new AdminGUI(shop).setVisible(true);
-            dispose();
-        } else {
-            JOptionPane.showMessageDialog(this, "Админ нэвтрэх мэдээлэл буруу!");
         }
     }
 }

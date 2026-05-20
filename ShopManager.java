@@ -2,71 +2,79 @@ import java.io.*;
 import java.util.*;
 
 class ShopManager {
-    // d. Бүрдмэл харьцаа (Composition) - ShopManager бараануудын жагсаалтыг агуулж байна
+    private static final String FILE_NAME = "products.csv";
+
+    // d. Бүрдмэл харьцаа (Composition)
     private List<Product> products = new ArrayList<>();
-    private List<Basket> basket=new ArrayList<>();
+    private List<Basket> basket = new ArrayList<>();
+
+    // Байгуулагч - програм эхлэхэд файлаас уншина
+    public ShopManager() {
+        loadFromFile();
+    }
 
     public void addProduct(Product p) {
         products.add(p);
+        saveToFile(FILE_NAME);
     }
 
-   
-   public void removeProductAfterBuy(String id,int quantity) {
-       for(Product p:products){
-        if(p.getId().equals(id)){
-            int newQuantity=p.quantity-quantity;
-            if(newQuantity>=0){
-                p.setQuantity(newQuantity);
+    public void removeProductAfterBuy(String id, int quantity) {
+        for (Product p : products) {
+            if (p.getId().equals(id)) {
+                int newQuantity = p.quantity - quantity;
+                if (newQuantity >= 0) {
+                    p.setQuantity(newQuantity);
+                }
             }
         }
-       }
-    
-   }
+        saveToFile(FILE_NAME);
+    }
 
-  public void removeProductFromBasket(String id, int quantity){
-    for (Basket b:basket){
-        if(b.getId().equals(id)){
-            int newQuantity=b.quantity-quantity;
-            if(newQuantity<=0){
-                basket.remove(b);
-            }else{
-                b.setQuantity(newQuantity);
+    public void removeProductFromBasket(String id, int quantity) {
+        for (Basket b : basket) {
+            if (b.getId().equals(id)) {
+                int newQuantity = b.quantity - quantity;
+                if (newQuantity <= 0) {
+                    basket.remove(b);
+                } else {
+                    b.setQuantity(newQuantity);
+                }
+                return;
             }
-            return;
-        }
-    } 
-
-
-  }
-  public void removeProduct(String id) {
-    products.removeIf(p -> p.getId().equals(id));
-}
-  public void addProductToBasket(Basket p) {
-    // Сагсанд аль хэдийн байгаа эсэхийг шалгах
-    for (Basket b : basket) {
-        if (b.getId().equals(p.getId())) {
-            // Байвал тоог нэмэх
-            int newQty = b.getQuantity() + p.getQuantity();
-            basket.set(basket.indexOf(b), new Basket(b.getId(), b.getName(), b.getPrice(), newQty));
-            System.out.println("Тоо шинэчлэгдлээ: " + b.getName() + " x" + newQty);
-            return;
         }
     }
-    
-    basket.add(p);
-    System.out.println("Сагсанд нэмэгдлээ: " + p.getName() + " x" + p.getQuantity());
-}
-    public List<Product> getProducts(){
+
+    public void removeProduct(String id) {
+        products.removeIf(p -> p.getId().equals(id));
+        saveToFile(FILE_NAME);
+    }
+
+    public void addProductToBasket(Basket p) {
+        for (Basket b : basket) {
+            if (b.getId().equals(p.getId())) {
+                int newQty = b.getQuantity() + p.getQuantity();
+                basket.set(basket.indexOf(b), new Basket(b.getId(), b.getName(), b.getPrice(), newQty));
+                System.out.println("Тоо шинэчлэгдлээ: " + b.getName() + " x" + newQty);
+                return;
+            }
+        }
+        basket.add(p);
+        System.out.println("Сагсанд нэмэгдлээ: " + p.getName() + " x" + p.getQuantity());
+    }
+
+    public List<Product> getProducts() {
         return products;
     }
-    public List<Basket> getBasketProducts() { return basket; }
+
+    public List<Basket> getBasketProducts() {
+        return basket;
+    }
 
     // a. Файлтай ажиллах (I/O) - Барааг файл руу хадгалах
     public void saveToFile(String fileName) {
-       
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             for (Product p : products) {
-                writer.write(p.id + "," + p.name + "," + p.price);
+                writer.write(p.getId() + "," + p.getName() + "," + p.getPrice() + "," + p.getQuantity());
                 writer.newLine();
             }
             System.out.println("Мэдээлэл амжилттай хадгалагдлаа.");
@@ -75,11 +83,27 @@ class ShopManager {
         }
     }
 
-    // e. Эрэмбэлэлт (Sorting) - Үнээр нь эрэмбэлэх
-    // public void sortByPrice() {
-    //     products.sort(Comparator.comparingDouble(p -> p.price));
-    //     System.out.println("Барааг үнээр нь эрэмбэллээ.");
-    // }
+    // Файлаас уншина
+    public void loadFromFile() {
+        File file = new File(FILE_NAME);
+        if (!file.exists()) return;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length < 4) continue;
+                String id    = parts[0];
+                String name  = parts[1];
+                double price = Double.parseDouble(parts[2]);
+                int qty      = Integer.parseInt(parts[3]);
+                products.add(new Product(id, name, price, qty));
+            }
+            System.out.println("Файлаас амжилттай уншлаа.");
+        } catch (IOException e) {
+            System.out.println("Файл уншихад алдаа гарлаа: " + e.getMessage());
+        }
+    }
 
     // e. Хайлтын алгоритм (Search) - Нэрээр хайх
     public void searchByName(String name) {

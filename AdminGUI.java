@@ -9,14 +9,14 @@ public class AdminGUI extends JFrame {
 
     public AdminGUI(ShopManager shop) {
         this.shop = shop;
-        setTitle("Админ панел");
+        setTitle("Админ");
         setSize(900, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
         // Толгой
-        JLabel title = new JLabel("Админ панел", SwingConstants.CENTER);
+        JLabel title = new JLabel("Админ хуудас", SwingConstants.CENTER);
         title.setFont(new Font("SansSerif", Font.BOLD, 20));
         title.setBackground(new Color(83, 74, 183));
         title.setForeground(Color.WHITE);
