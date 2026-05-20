@@ -13,7 +13,7 @@ public class Main {
         shop.showAll();
 
         // Эрэмбэлэх
-        shop.sortByPrice();
+        // shop.sortByPrice();
         shop.showAll();
 
         // Хайлт

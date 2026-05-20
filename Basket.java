@@ -18,5 +18,5 @@ public double  getPrice()    { return price; }
 public int     getQuantity() { return quantity; }
 public String  getType()     { return "General"; } 
   
-    
+public void setQuantity(int quantity) { this.quantity = quantity; }
 }

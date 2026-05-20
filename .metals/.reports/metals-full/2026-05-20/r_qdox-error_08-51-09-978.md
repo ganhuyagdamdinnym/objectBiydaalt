@@ -1,11 +1,11 @@
 error id: file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ShopManager.java
 file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ShopManager.java
-### com.thoughtworks.qdox.parser.ParseException: syntax error @[18,24]
+### com.thoughtworks.qdox.parser.ParseException: syntax error @[16,3]
 
 error in qdox parser
 file content:
 ```java
-offset: 517
+offset: 360
 uri: file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ShopManager.java
 text:
 ```scala
@@ -15,18 +15,52 @@ import java.util.*;
 class ShopManager {
     // d. Бүрдмэл харьцаа (Composition) - ShopManager бараануудын жагсаалтыг агуулж байна
     private List<Product> products = new ArrayList<>();
-    private List<Product> basket=new ArrayList<>();
+    private List<Basket> basket=new ArrayList<>();
 
     public void addProduct(Product p) {
         products.add(p);
     }
-    public void addProductToBasket(Product p){
-        basket.add(p);
+
+   
+    rem
+
+  p@@ublic void removeProductFromBasket(String id, int quantity){
+    for (Basket b:basket){
+        if(b.getId().equals(id)){
+            int newQuantity=b.quantity-quantity;
+            if(newQuantity<=0){
+                basket.remove(b);
+            }else{
+                b.setQuantity(newQuantity);
+            }
+            return;
+        }
+    } 
+
+
+  }
+  public void removeProduct(String id) {
+    products.removeIf(p -> p.getId().equals(id));
+}
+  public void addProductToBasket(Basket p) {
+    // Сагсанд аль хэдийн байгаа эсэхийг шалгах
+    for (Basket b : basket) {
+        if (b.getId().equals(p.getId())) {
+            // Байвал тоог нэмэх
+            int newQty = b.getQuantity() + p.getQuantity();
+            basket.set(basket.indexOf(b), new Basket(b.getId(), b.getName(), b.getPrice(), newQty));
+            System.out.println("Тоо шинэчлэгдлээ: " + b.getName() + " x" + newQty);
+            return;
+        }
     }
+    
+    basket.add(p);
+    System.out.println("Сагсанд нэмэгдлээ: " + p.getName() + " x" + p.getQuantity());
+}
     public List<Product> getProducts(){
         return products;
     }
-    public List<Produc\t@@> getBasketProducts() { return basket; }
+    public List<Basket> getBasketProducts() { return basket; }
 
     // a. Файлтай ажиллах (I/O) - Барааг файл руу хадгалах
     public void saveToFile(String fileName) {
@@ -43,10 +77,10 @@ class ShopManager {
     }
 
     // e. Эрэмбэлэлт (Sorting) - Үнээр нь эрэмбэлэх
-    public void sortByPrice() {
-        products.sort(Comparator.comparingDouble(p -> p.price));
-        System.out.println("Барааг үнээр нь эрэмбэллээ.");
-    }
+    // public void sortByPrice() {
+    //     products.sort(Comparator.comparingDouble(p -> p.price));
+    //     System.out.println("Барааг үнээр нь эрэмбэллээ.");
+    // }
 
     // e. Хайлтын алгоритм (Search) - Нэрээр хайх
     public void searchByName(String name) {

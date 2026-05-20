@@ -18,6 +18,9 @@ class Product implements Displayable {
         this.quantity=quantity;
     }
 
+    public void setQuantity(int quantity){
+        this.quantity=quantity;
+    }
 public String  getId()       { return id; }
 public String  getName()     { return name; }
 public double  getPrice()    { return price; }

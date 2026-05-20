@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/OrderCardGUI.java:_empty_/ShopManager#removeProductFromBasket().
+file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/OrderCardGUI.java
+empty definition using pc, found symbol in pc: _empty_/ShopManager#removeProductFromBasket().
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 3609
+uri: file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/OrderCardGUI.java
+text:
+```scala
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
@@ -12,9 +23,8 @@ public class OrderCardGUI extends JPanel {
     private static final Color MUTED        = new Color(120, 120, 120);
     private static final Color DIVIDER      = new Color(230, 230, 225);
 
-    public OrderCardGUI(Basket b, ShopManager shop, Runnable onRefresh) {
+    public OrderCardGUI(Basket b, ShopManager shop) {
         this.shop = shop;
-        this.onRefresh = onRefresh;
         setLayout(new GridBagLayout());
         setBackground(BG_COLOR);
         setBorder(makeBorder(BORDER));
@@ -26,29 +36,41 @@ public class OrderCardGUI extends JPanel {
         g.weightx = 1;
         g.fill    = GridBagConstraints.HORIZONTAL;
 
-        g.gridy  = 0; g.insets = new Insets(0, 0, 6, 0);
+        // Badge
+        g.gridy  = 0;
+        g.insets = new Insets(0, 0, 6, 0);
         add(makeBadge(b.getType()), g);
 
-        g.gridy  = 1; g.insets = new Insets(0, 0, 2, 0);
+        // Нэр
+        g.gridy  = 1;
+        g.insets = new Insets(0, 0, 2, 0);
         JLabel name = new JLabel(b.getName());
         name.setFont(new Font("SansSerif", Font.BOLD, 15));
         add(name, g);
 
-        g.gridy  = 2; g.insets = new Insets(0, 0, 8, 0);
+        // ID
+        g.gridy  = 2;
+        g.insets = new Insets(0, 0, 8, 0);
         JLabel id = new JLabel("ID: " + b.getId());
         id.setFont(new Font("SansSerif", Font.PLAIN, 10));
         id.setForeground(MUTED);
         add(id, g);
 
-        g.gridy  = 3; g.insets = new Insets(0, 0, 8, 0);
+        // Хуваагч шугам
+        g.gridy  = 3;
+        g.insets = new Insets(0, 0, 8, 0);
         JSeparator sep = new JSeparator();
         sep.setForeground(DIVIDER);
         add(sep, g);
 
-        g.gridy  = 4; g.insets = new Insets(0, 0, 10, 0);
+        // Үнэ + тоо
+        g.gridy  = 4;
+        g.insets = new Insets(0, 0, 10, 0);
         add(makeBottom(b), g);
 
-        g.gridy  = 5; g.insets = new Insets(0, 0, 0, 0);
+        // Хасах товч
+        g.gridy  = 5;
+        g.insets = new Insets(0, 0, 0, 0);
         JButton btnRemove = new JButton("Хасах");
         btnRemove.setFont(new Font("SansSerif", Font.PLAIN, 11));
         btnRemove.setBackground(new Color(220, 53, 69));
@@ -60,6 +82,7 @@ public class OrderCardGUI extends JPanel {
         btnRemove.addActionListener(e -> minusProductFromBasket(b));
         add(btnRemove, g);
 
+        // Hover
         addMouseListener(new MouseAdapter() {
             @Override public void mouseEntered(MouseEvent e) { setBorder(makeBorder(BORDER_HOVER)); }
             @Override public void mouseExited (MouseEvent e) { setBorder(makeBorder(BORDER)); }
@@ -84,9 +107,10 @@ public class OrderCardGUI extends JPanel {
                 JOptionPane.showMessageDialog(null, "Хасах тоо хэтэрлээ! (Үлдэгдэл: " + b.getQuantity() + " ш)");
                 return;
             }
-            shop.removeProductFromBasket(b.getId(), qty);
+            shop.removeProductFrom@@Basket(b.getId(), qty);
             JOptionPane.showMessageDialog(null, b.getName() + " x" + qty + " ширхэг хасагдлаа!");
-            onRefresh.run();
+            //  onRefresh.run();
+
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Зөвхөн тоо оруулна уу!");
         }
@@ -136,3 +160,9 @@ public class OrderCardGUI extends JPanel {
         return lbl;
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/ShopManager#removeProductFromBasket().

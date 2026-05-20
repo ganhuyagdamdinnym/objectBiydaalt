@@ -1,19 +1,20 @@
 import javax.swing.*;
+import javax.swing.border.AbstractBorder;
 import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.geom.RoundRectangle2D;
 
 public class ProductCard extends JPanel {
-     ShopManager shop = new ShopManager();
+    ShopManager shop = new ShopManager();
     private static final Color BG_COLOR     = new Color(255, 255, 255);
     private static final Color BORDER       = new Color(220, 220, 220);
     private static final Color BORDER_HOVER = new Color(170, 180, 200);
     private static final Color MUTED        = new Color(120, 120, 120);
     private static final Color DIVIDER      = new Color(230, 230, 225);
 
- 
     public ProductCard(Product p, ShopManager shop) {
-    this.shop = shop;
+        this.shop = shop;
 
         setLayout(new GridBagLayout());
         setBackground(BG_COLOR);
@@ -61,14 +62,7 @@ public class ProductCard extends JPanel {
         // Сагсанд нэмэх товч
         g.gridy  = 5;
         g.insets = new Insets(0, 0, 0, 0);
-        JButton btnCart = new JButton("Сагсанд нэмэх");
-        btnCart.setFont(new Font("SansSerif", Font.PLAIN, 11));
-        btnCart.setBackground(new Color(83, 74, 183));
-        btnCart.setForeground(Color.WHITE);
-        btnCart.setFocusPainted(false);
-        btnCart.setBorderPainted(false);
-        btnCart.setOpaque(true);
-        btnCart.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        JButton btnCart = new RoundedButton("Сагсанд нэмэх", new Color(83, 74, 183), Color.WHITE);
         btnCart.addActionListener(e -> addProductToBasket(p));
         add(btnCart, g);
 
@@ -78,38 +72,33 @@ public class ProductCard extends JPanel {
             @Override public void mouseExited (MouseEvent e) { setBorder(makeBorder(BORDER)); }
         });
     }
+
     private void addProductToBasket(Product p) {
-    // Хэдэн ширхэг нэмэх вэ?
-    String input = JOptionPane.showInputDialog(
-        null,
-        p.getName() + " - хэдэн ширхэг нэмэх вэ?",
-        "Тоо оруулах",
-        JOptionPane.QUESTION_MESSAGE
-    );
-
-    if (input == null) return; // Цуцлах дарвал
-
-    try {
-        int qty = Integer.parseInt(input.trim());
-        if (qty <= 0) {
-            JOptionPane.showMessageDialog(null, "0-ээс их тоо оруулна уу!");
+        if (p.getQuantity() <= 0) {
+            JOptionPane.showMessageDialog(this, "Энэ бүтээгдэхүүн дууссан байна!");
             return;
         }
-        if (qty > p.getQuantity()) {
-            JOptionPane.showMessageDialog(null, "Үлдэгдэл хүрэлцэхгүй байна! (Үлдэгдэл: " + p.getQuantity() + " ш)");
-            return;
-        }
-       
-        String id=p.getId();
-        String name=p.getName();
-        double price=p.getPrice();
-         shop.addProductToBasket(new Basket(id, name, price,qty));
-        // JOptionPane.showMessageDialog(null, p.getName() + " x" + qty + " ширхэг сагсанд нэмэгдлээ!");
 
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(null, "Зөвхөн тоо оруулна уу!");
+        SpinnerNumberModel spinModel = new SpinnerNumberModel(1, 1, p.getQuantity(), 1);
+        JSpinner spinner = new JSpinner(spinModel);
+        spinner.setFont(new Font("SansSerif", Font.PLAIN, 14));
+
+        JPanel panel = new JPanel(new GridLayout(2, 1, 0, 8));
+        panel.add(new JLabel(p.getName() + " — хэдэн ширхэг нэмэх вэ? (Үлдэгдэл: " + p.getQuantity() + " ш)"));
+        panel.add(spinner);
+
+        int result = JOptionPane.showConfirmDialog(
+            this, panel, "Сагсанд нэмэх",
+            JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE
+        );
+
+        if (result != JOptionPane.OK_OPTION) return;
+
+        int qty = (int) spinner.getValue();
+        shop.addProductToBasket(new Basket(p.getId(), p.getName(), p.getPrice(), qty));
+        shop.removeProductAfterBuy(p.getId(), qty);
+        JOptionPane.showMessageDialog(this, p.getName() + " x" + qty + " ширхэг сагсанд нэмэгдлээ!");
     }
-}
 
     private JPanel makeBottom(Product p) {
         JPanel panel = new JPanel(new BorderLayout());
@@ -140,8 +129,7 @@ public class ProductCard extends JPanel {
             @Override
             protected void paintComponent(Graphics g2) {
                 Graphics2D g = (Graphics2D) g2.create();
-                g.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-                                   RenderingHints.VALUE_ANTIALIAS_ON);
+                g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
                 g.setColor(getBackground());
                 g.fillRoundRect(0, 0, getWidth(), getHeight(), 8, 8);
                 g.dispose();
@@ -162,5 +150,39 @@ public class ProductCard extends JPanel {
                                lbl.setForeground(new Color(68,68,65));
         }
         return lbl;
+    }
+
+   
+
+    static class RoundedButton extends JButton {
+        private final Color bg;
+
+        RoundedButton(String text, Color bg, Color fg) {
+            super(text);
+            this.bg = bg;
+            setContentAreaFilled(false);
+            setFocusPainted(false);
+            setBorderPainted(false);
+            setOpaque(false);
+            setForeground(fg);
+            setFont(new Font("SansSerif", Font.PLAIN, 11));
+            setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        }
+
+        @Override
+        protected void paintComponent(Graphics g) {
+            Graphics2D g2 = (Graphics2D) g.create();
+            g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            if (getModel().isPressed()) {
+                g2.setColor(bg.darker());
+            } else if (getModel().isRollover()) {
+                g2.setColor(bg.darker());
+            } else {
+                g2.setColor(bg);
+            }
+            g2.fill(new RoundRectangle2D.Float(0, 0, getWidth(), getHeight(), 10, 10));
+            g2.dispose();
+            super.paintComponent(g);
+        }
     }
 }

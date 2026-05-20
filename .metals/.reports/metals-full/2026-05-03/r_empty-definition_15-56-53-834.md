@@ -1,11 +1,11 @@
-error id: file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ProductCard.java:javax/swing/JOptionPane#showMessageDialog().
+error id: file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ProductCard.java:_empty_/ShopManager#addProductToBasket().
 file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ProductCard.java
-empty definition using pc, found symbol in pc: javax/swing/JOptionPane#showMessageDialog().
+empty definition using pc, found symbol in pc: _empty_/ShopManager#addProductToBasket().
 empty definition using semanticdb
 empty definition using fallback
 non-local guesses:
 
-offset: 3608
+offset: 3652
 uri: file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ProductCard.java
 text:
 ```scala
@@ -22,7 +22,10 @@ public class ProductCard extends JPanel {
     private static final Color MUTED        = new Color(120, 120, 120);
     private static final Color DIVIDER      = new Color(230, 230, 225);
 
-    public ProductCard(Product p) {
+ 
+    public ProductCard(Product p, ShopManager shop) {
+    this.shop = shop;
+
         setLayout(new GridBagLayout());
         setBackground(BG_COLOR);
         setBorder(makeBorder(BORDER));
@@ -66,7 +69,6 @@ public class ProductCard extends JPanel {
         g.insets = new Insets(0, 0, 10, 0);
         add(makeBottom(p), g);
 
-        // Сагсанд нэмэх товч
         g.gridy  = 5;
         g.insets = new Insets(0, 0, 0, 0);
         JButton btnCart = new JButton("Сагсанд нэмэх");
@@ -86,8 +88,7 @@ public class ProductCard extends JPanel {
             @Override public void mouseExited (MouseEvent e) { setBorder(makeBorder(BORDER)); }
         });
     }
-    
-  private void addProductToBasket(Product p) {
+    private void addProductToBasket(Product p) {
     // Хэдэн ширхэг нэмэх вэ?
     String input = JOptionPane.showInputDialog(
         null,
@@ -108,14 +109,19 @@ public class ProductCard extends JPanel {
             JOptionPane.showMessageDialog(null, "Үлдэгдэл хүрэлцэхгүй байна! (Үлдэгдэл: " + p.getQuantity() + " ш)");
             return;
         }
-
-        shop.addProductToBasket(new Basket(p.getId(), p.getName(), p.getPrice(), qty));
-        JOptionPane.showM@@essageDialog(null, p.getName() + " x" + qty + " ширхэг сагсанд нэмэгдлээ!");
+       
+        String id=p.getId();
+        String name=p.getName();
+        double price=p.getPrice();
+        
+         shop.addProductToBask@@et(new Basket(id, name, price,qty));
+        // JOptionPane.showMessageDialog(null, p.getName() + " x" + qty + " ширхэг сагсанд нэмэгдлээ!");
 
     } catch (NumberFormatException e) {
         JOptionPane.showMessageDialog(null, "Зөвхөн тоо оруулна уу!");
     }
 }
+
     private JPanel makeBottom(Product p) {
         JPanel panel = new JPanel(new BorderLayout());
         panel.setBackground(BG_COLOR);
@@ -174,4 +180,4 @@ public class ProductCard extends JPanel {
 
 #### Short summary: 
 
-empty definition using pc, found symbol in pc: javax/swing/JOptionPane#showMessageDialog().
+empty definition using pc, found symbol in pc: _empty_/ShopManager#addProductToBasket().

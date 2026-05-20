@@ -11,7 +11,7 @@ public class BasketGUI extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        JLabel title = new JLabel("Миний са", SwingConstants.CENTER);
+        JLabel title = new JLabel("Миний сагс", SwingConstants.CENTER);
         title.setFont(new Font("SansSerif", Font.BOLD, 18));
         title.setBorder(BorderFactory.createEmptyBorder(16, 0, 8, 0));
         add(title, BorderLayout.NORTH);
@@ -42,22 +42,31 @@ public class BasketGUI extends JFrame {
         bottomPanel.add(btnOrder,   BorderLayout.EAST);
         add(bottomPanel, BorderLayout.SOUTH);
 
-        // Сагсны бараануудыг харуулах
-        List<Basket> items = shop.getBasketProducts();
+        updateCards(cardPanel, totalLabel, shop);
+    }
 
-        System.out.println("test"+items);
+    private void updateCards(JPanel cardPanel, JLabel totalLabel, ShopManager shop) {
+        cardPanel.removeAll();
+
+        List<Basket> items = shop.getBasketProducts();
         if (items.isEmpty()) {
             JLabel empty = new JLabel("Сагс хоосон байна");
             empty.setForeground(new Color(120, 120, 120));
             empty.setFont(new Font("SansSerif", Font.PLAIN, 13));
             cardPanel.add(empty);
+            totalLabel.setText("Нийт: 0₮");
         } else {
             double total = 0;
             for (Basket b : items) {
-                cardPanel.add(new OrderCardGUI(b, shop));
+                cardPanel.add(new OrderCardGUI(b, shop,
+                    () -> updateCards(cardPanel, totalLabel, shop) // callback
+                ));
                 total += b.getPrice() * b.getQuantity();
             }
             totalLabel.setText("Нийт: " + String.format("%,.0f₮", total));
         }
+
+        cardPanel.revalidate();
+        cardPanel.repaint();
     }
 }

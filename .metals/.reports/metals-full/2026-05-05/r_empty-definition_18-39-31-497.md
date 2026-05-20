@@ -1,3 +1,14 @@
+error id: file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ShopManager.java:java/lang/String#
+file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ShopManager.java
+empty definition using pc, found symbol in pc: java/lang/String#
+found definition using semanticdb; symbol ShopManager#addProductToBasket().
+empty definition using fallback
+non-local guesses:
+
+offset: 752
+uri: file:///C:/Users/user/OneDrive/Desktop/obbiydaalt/ShopManager.java
+text:
+```scala
 import java.io.*;
 import java.util.*;
 
@@ -10,18 +21,7 @@ class ShopManager {
         products.add(p);
     }
 
-   
-   public void removeProductAfterBuy(String id,int quantity) {
-       for(Product p:products){
-        if(p.getId().equals(id)){
-            int newQuantity=p.quantity-quantity;
-            if(newQuantity>=0){
-                p.setQuantity(newQuantity);
-            }
-        }
-       }
-    
-   }
+
 
   public void removeProductFromBasket(String id, int quantity){
     for (Basket b:basket){
@@ -38,7 +38,7 @@ class ShopManager {
 
 
   }
-  public void removeProduct(String id) {
+  public void removeProduct(Stri@@ng id) {
     products.removeIf(p -> p.getId().equals(id));
 }
   public void addProductToBasket(Basket p) {
@@ -52,7 +52,7 @@ class ShopManager {
             return;
         }
     }
-    
+    // Байхгүй бол шинээр нэмэх
     basket.add(p);
     System.out.println("Сагсанд нэмэгдлээ: " + p.getName() + " x" + p.getQuantity());
 }
@@ -76,10 +76,10 @@ class ShopManager {
     }
 
     // e. Эрэмбэлэлт (Sorting) - Үнээр нь эрэмбэлэх
-    // public void sortByPrice() {
-    //     products.sort(Comparator.comparingDouble(p -> p.price));
-    //     System.out.println("Барааг үнээр нь эрэмбэллээ.");
-    // }
+    public void sortByPrice() {
+        products.sort(Comparator.comparingDouble(p -> p.price));
+        System.out.println("Барааг үнээр нь эрэмбэллээ.");
+    }
 
     // e. Хайлтын алгоритм (Search) - Нэрээр хайх
     public void searchByName(String name) {
@@ -97,3 +97,9 @@ class ShopManager {
         for (Product p : products) p.displayInfo();
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: java/lang/String#
